@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(min-width:556px)" href="css/nouveauté.css">
+    <link rel="stylesheet" media="(max-width: 3000px)" href="css/tablette.css">
+    <link rel="stylesheet" media="(max-width: 900px)" href="css/mobile.css">
+    <script src="https://kit.fontawesome.com/158561a05e.js" crossorigin="anonymous"></script>
+    <title>nouveauté</title>
+</head>
+<body>
+<header>
+    <nav>
+    <div class="header">
+        <ul class="liHeader">
+            
+            <li class="liImg"><img class="avatar" src="img/avatar.png" alt="avatar" width="20px" height="20px">COMPTE</li>
+            <li id="panier" class="liImg"><img class="panier" src="img/panier.png" alt="panier" width="20px" height="20px">PANIER</li>
+</ul>
+
+            <!-- menu burger -->
+            <ul>
+                <li class="burger" onclick="openNav()"><a href="#"><i class="fas fa-solid fa-bars fa-2x"></i></a></li>
+            </ul>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <li><a class="active" href="html/Page_accueil.html">ACCUEIL</a></li>
+                    <li><a href="html/favori.html">FAVORI</a></li>
+                    <li><a href="html/noschoix.html">NOS CHOIX</a></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+</nav>
+</header>
+
+
+
+    <div class="container"></div>
+        
+        <div class="menu_filtre">
+        <ul class="filtre">
+                <li class="cat">SCIENCE FICTION</li>
+                <li class="cat">MANGA</li>
+                <li class="cat">POLICIER</li>
+                <li class="cat">THRILLER</li>
+                <li class="cat">LITTERATURE</li>
+            </ul>
+        </div>
+
+<!-- animation -->
+<div id="table">
+    <div id="centeralign">
+      <h1 class="citation">Nouveautés 2022</h1>
+      <p class="citation2">"Lis avec lenteur à une époque où l'on nous parle de lecture rapide et de lecture en diagonale."</p>
+    </div>
+  </div>
+
+
+        <div class="articles-container"></div>
+        
+        <div class="footer">
+            <a class="btn" href="#">
+               <img class="fleche" src="img/fleche.png" alt="fleche">
+              </a>
+                <h2 class="contact">Contact<br>Tél : 065215351 <br>Email : librairie@gmail.com</h2>
+        </div>
+        <script src="nouveauté.js"></script>
+</body>
+</html>

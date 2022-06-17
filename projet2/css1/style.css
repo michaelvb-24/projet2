@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: lightgrey;
+}
+
+.header, .footer {
+    flex-basis: 60px;
+    background: rgb(172, 9, 9); 
+    display:flex;   
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display:flex;
+   color:white;
+    margin-left: 1rem;
+}
+
+.menu{
+    display:flex;
+    margin: 0.5rem;
+    height: 50px;
+    width: 100px;
+    margin-right: 50px;
+}
+
+.menu span{
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0.35rem;
+    text-align: center;
+    flex: 3;
+    order: 1;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+.main{
+    flex: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.sidebar{
+    max-width: 250px;
+    flex-basis: 500px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.sidebar span{
+    display:flex;
+    border: 1px solid white;
+    flex: 9;
+    order: 1;
+    margin:1rem;
+    background-color: rgb(172, 9, 9);
+    display: flex;
+    flex-basis: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.span{
+    transition: all 1s;
+}
+
+.span:hover{
+
+    transform: scale(1.04);
+}
+
+.content{
+    background-color: rgb(172, 9, 9);
+    margin:3rem;
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.content div{
+
+    flex-basis: 200px;
+    height: 96%;
+    margin: 1rem;
+    background-color: rgb(172, 9, 9);
+    flex: 3;
+    order: 1;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.i1{
+    background: url(../Images/ashley-byrd-KVby0S0GaH4-unsplash.jpg) center center;
+    background-size: cover;
+    transition: all 1s;
+    border : 1px solid rgb(172, 9, 9)
+}
+.i1:hover{
+    transform: scale(1.05)
+}
+
+.i2{
+    background:url(../Images/marialaura-gionfriddo-50G3FvyQxX0-unsplash.jpg) center center;
+    background-size: cover;
+    transition: all 1s;
+    border : 1px solid rgb(172, 9, 9)
+}
+.i2:hover{
+    transform: scale(1.05)
+}
+
+.i3{
+    background:url(../Images/andrew-valdivia-P1uZaHy9Yns-unsplash.jpg) center center;
+    background-size: cover;
+    transition: all 1s;
+    border : 1px solid rgb(172, 9, 9)
+}
+.i3:hover{
+    transform: scale(1.04);
+
+}
+
+@media (max-width:500px) {
+    .sidebar{
+        display:none;
+    }
+}
+
+.div1{
+    transition: all 1s
+}
+
+.div1:hover{
+    transform: scale (1.1)
+}
+
+.content span{
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #000000 0%, #ffffff00 74%);
+    height: 60px;
+    align-items: center;
+    padding: 10%;
+    font-size:32px;
+    font-weight: 1000;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+}
+
+.footer span{
+    background-color: white;
+    margin: 1rem;
+    flex-basis: 200px;
+    display: flex;
+    justify-content: space-evenly; 
+}
